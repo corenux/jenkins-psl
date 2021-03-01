@@ -1,5 +1,5 @@
 def call(Map config=[:], Closure body) {
-    node {
+    node('pipeline') {
         git url: "https://github.com/corenux/sample-nodejs"
 
         stage("Install") {
